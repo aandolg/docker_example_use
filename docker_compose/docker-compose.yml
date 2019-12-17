@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  apache2:
+    container_name: docker_compose-apache2
+    hostname: docker_compose_apache2
+    image: httpd:2.4
+    volumes:
+    - ./src:/usr/local/apache2/htdocs/
+    - ./apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
+
+  php-fpm:
+    container_name: docker_compose-php-fpm
+    hostname: docker_compose_php_fpm
+    image: php:7.3.12-fpm-buster
+    volumes:
+    - ./src:/var/www/html
