@@ -1,4 +1,4 @@
-# Create LAMP stack(one service one container)
+# Create LA*P stack(one service one container)
     
 go to folder "lamp_one_container_one_service" and run command in your terminal
 for apache (https://hub.docker.com/_/httpd)
