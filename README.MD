@@ -1,7 +1,7 @@
-#Example use docker
-###Install docker, docker compose, google chrome, phpstorm
+# Example use docker
+### Install docker, docker compose, google chrome, phpstorm
 
-###Manual install
+### Manual install
 ##### Install docker command with use get-docker.sh (script docker.com)
 
 	sudo apt install curl -y
@@ -11,7 +11,7 @@
 	sudo usermod -aG docker $USER
 	after bash command you must reload OS
 
-#####Install docker compose
+##### Install docker compose
 	sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 	sudo chmod +x /usr/local/bin/docker-compose
 
@@ -24,5 +24,5 @@
 	sudo apt-get update -y
 	sudo apt-get install google-chrome-stable -y
 
-###Auto install
+### Auto install
 	use ./bin/installall
